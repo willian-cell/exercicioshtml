@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tags">Tags HTML</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#imagens">Imagens</a>
+    </nav>
+    <div class="content">
+        <h1>Aprenda HTML</h1>
+        <div id="inicio">
+            <h2>Bem-vindo!</h2>
+            <p>Este site irá ensinar sobre diferentes tags HTML e suas funções. Use as abas abaixo para navegar entre as tags.</p>
+        </div>
+        <div id="sobre">
+            <h2>Sobre</h2>
+            <p>HTML (HyperText Markup Language) é a linguagem padrão para criar páginas web. Com HTML, você pode estruturar conteúdo, criar links, listas e muito mais.</p>
+        </div>
+        <div id="tags">
+            <div class="tabs">
+                <div class="tab-button active" data-tab="strong">strong</div>
+                <div class="tab-button" data-tab="em">em</div>
+                <div class="tab-button" data-tab="mark">mark</div>
+                <div class="tab-button" data-tab="abbr">abbr</div>
+                <div class="tab-button" data-tab="ol-ul">ol & ul</div>
+            </div>
+
+            <div id="strong" class="tab-content active">
+                <h2>Tag <strong>&lt;strong&gt;</strong></h2>
+                <p>A tag <strong>&lt;strong&gt;</strong> é usada para definir texto com importância forte. O texto envolvido com essa tag é exibido em negrito.</p>
+                <div class="code-block">
+&lt;strong&gt;Texto em negrito&lt;/strong&gt;
+                </div>
+                <p>Exemplo: <strong>Texto em negrito</strong></p>
+            </div>
+
+            <div id="em" class="tab-content">
+                <h2>Tag <em>&lt;em&gt;</em></h2>
+                <p>A tag <em>&lt;em&gt;</em> é usada para definir texto que deve ser enfatizado. O texto envolvido com essa tag é exibido em itálico.</p>
+                <div class="code-block">
+&lt;em&gt;Texto em itálico&lt;/em&gt;
+                </div>
+                <p>Exemplo: <em>Texto em itálico</em></p>
+            </div>
+
+            <div id="mark" class="tab-content">
+                <h2>Tag <mark>&lt;mark&gt;</mark></h2>
+                <p>A tag <mark>&lt;mark&gt;</mark> é usada para marcar texto com uma cor de fundo destacada.</p>
+                <div class="code-block">
+&lt;mark&gt;Texto destacado&lt;/mark&gt;
+                </div>
+                <p>Exemplo: <mark>Texto destacado</mark></p>
+            </div>
+
+            <div id="abbr" class="tab-content">
+                <h2>Tag <abbr>&lt;abbr&gt;</abbr></h2>
+                <p>A tag <abbr>&lt;abbr&gt;</abbr> é usada para definir uma abreviação ou acrônimo. Você pode fornecer uma descrição completa com o atributo <code>title</code>.</p>
+                <div class="code-block">
+&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;
+                </div>
+                <p>Exemplo: <abbr title="Hypertext Markup Language">HTML</abbr></p>
+            </div>
+
+            <div id="ol-ul" class="tab-content">
+                <h2>Tags <code>&lt;ol&gt;</code> e <code>&lt;ul&gt;</code></h2>
+                <p>A tag <code>&lt;ol&gt;</code> define uma lista ordenada (numerada), enquanto a tag <code>&lt;ul&gt;</code> define uma lista não ordenada (com marcadores).</p>
+                <div class="code-block">
+&lt;ol&gt;<br>
+    &lt;li&gt;Item 1&lt;/li&gt;<br>
+    &lt;li&gt;Item 2&lt;/li&gt;<br>
+&lt;/ol&gt;
+                </div>
+                <div class="code-block">
+&lt;ul&gt;<br>
+    &lt;li&gt;Item A&lt;/li&gt;<br>
+    &lt;li&gt;Item B&lt;/li&gt;<br>
+&lt;/ul&gt;
+                </div>
+                <p>Exemplo de lista ordenada:</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+                <p>Exemplo de lista não ordenada:</p>
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Seção de Tags de Vídeos -->
+        <div id="videos">
+            <div class="tabs">
+                <div class="tab-button active" data-tab="video">video</div>
+                <div class="tab-button" data-tab="iframe">iframe</div>
+            </div>
+
+            <div id="video" class="tab-content active">
+                <h2>Tag <code>&lt;video&gt;</code></h2>
+                <p>A tag <code>&lt;video&gt;</code> é usada para incorporar vídeos em uma página web. Ela permite que você adicione controles como play, pause e volume.</p>
+                <div class="code-block">
+&lt;video width="320" height="240" controls&gt;<br>
+    &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+    Seu navegador não suporta o elemento &lt;video&gt;.<br>
+&lt;/video&gt;
+                </div>
+                <p>Exemplo:</p>
+                <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento <code>&lt;video&gt;</code>.
+                </video>
+            </div>
+
+            <div id="iframe" class="tab-content">
+                <h2>Tag <code>&lt;iframe&gt;</code></h2>
+                <p>A tag <code>&lt;iframe&gt;</code> é usada para incorporar outra página web dentro da página atual. É comumente usada para exibir conteúdos de outras fontes, como vídeos do YouTube.</p>
+                <div class="code-block">
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5Hn58p-hYC0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+                </div>
+                <p>Exemplo:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5Hn58p-hYC0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Seção de Imagens -->
+        <div id="imagens">
+            <div class="tabs">
+                <div class="tab-button active" data-tab="img">img</div>
+                <div class="tab-button" data-tab="figure">figure</div>
+            </div>
+
+            <div id="img" class="tab-content active">
+                <h2>Tag <code>&lt;img&gt;</code></h2>
+                <p>A tag <code>&lt;img&gt;</code> é usada para incorporar imagens em uma página web. Ela não possui uma tag de fechamento e requer os atributos <code>src</code> (caminho da imagem) e <code>alt</code> (texto alternativo).</p>
+                <div class="code-block">
+&lt;img src="imagem.jpg" alt="Descrição da imagem" width="300"&gt;
+                </div>
+                <p>Exemplo:</p>
+                <img src="https://t.ctcdn.com.br/HfaAfdSP0yElfXWQelkeEQvkgyU=/1000x563/smart/i257652.jpeg" alt="Descrição da imagem" width="300">
+            </div>
+
+            <div id="figure" class="tab-content">
+                <h2>Tag <code>&lt;figure&gt;</code></h2>
+                <p>A tag <code>&lt;figure&gt;</code> é usada para encapsular uma imagem (ou outro conteúdo gráfico) e sua legenda. Ela é geralmente usada com a tag <code>&lt;figcaption&gt;</code>.</p>
+                <div class="code-block">
+&lt;figure&gt;<br>
+    &lt;img src="https://t.ctcdn.com.br/HfaAfdSP0yElfXWQelkeEQvkgyU=/1000x563/smart/i257652.jpeg" alt="Descrição da imagem" width="300"&gt;<br>
+    &lt;figcaption&gt;ARARA AZUL&lt;/figcaption&gt;<br>
+&lt;/figure&gt;
+                </div>
+                <p>Exemplo:</p>
+                <figure>
+                    <img src="https://t.ctcdn.com.br/HfaAfdSP0yElfXWQelkeEQvkgyU=/1000x563/smart/i257652.jpeg" alt="Descrição da imagem" width="300">
+                    <figcaption>Descrição da imagem</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+                
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

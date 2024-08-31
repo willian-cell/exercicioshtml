@@ -1,0 +1,147 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+nav {
+    background: #3211c5;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #1e0cbd;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+h1, h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 20%;
+}
+
+.tab-button.active {
+    background: #007bff;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.code-block {
+    background: #3612bb;
+    color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+ol, ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #194dad;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav {
+        text-align: left;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+}
